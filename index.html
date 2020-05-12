@@ -3,89 +3,136 @@
   <head>
     <title>Responsive Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='css/reset.css' rel='stylesheet'/>
+    <link href='css/styles.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="https://use.typekit.net/bpx1wig.css">
+
+
   </head>
 
   <body>
-    <main class="container">
-
+  <header>
       <!--Nav bar -->
-      <img src="images/logo.png" alt="logo">
-      <ul>
-        <li><a href="portcode/about.html">About</a></li>
-        <li><a href="portcode/projects.html">Projects</a></li>
-        <li><a href="portcode/contact.html">Contact</a></li>
-      </ul>
+    <div class="topNav">
+      <img src="images/logo.png" class="logo" alt="logo">
+      <nav class="nav-menu">
 
+          <a href="portcode/about.html" class="nav-link1">About</a>
+          <a href="portcode/resume.html" class="nav-link2">Resume</a>
+          <a href="portcode/contact.html" class="nav-link3">Contact</a>
+
+      </nav>
+    </div>
+
+  </header>
+
+    <section class="right-elements">
+      <img src="images/barcode.png" class="barcode" alt="Barcode">
+      <img src="images/homedate.png" class="date" alt="September 2019 to May 2020">
+    </section>
+
+  <main class="container">
       <!--Hero Section -->
       <section class="hero">
         <h1>HE
           <br>LL
           <br>O </h1>
+          <span class="line-element"></span>
+
         <p id="blurb1">I’m Alexa but you can call me Lex. I am a designer currently in California but looking to move wherever the wind takes me! I have a frictionless approach to user experience.</p>
         <p id="blurb2">I compete in strength sports, I draw, tell stories through photography, and center myself by doing new, challenging things.</p>
-        <img src="images/arrow.png" alt="Down Arrow">
-        <img src="images/barcode.png" alt="Barcode">
-        <img src="images/homedate.png" alt="September 2019 to May 2020">
+
+        <img src="images/arrow.png" class="green-arrow" alt="Down Arrow">
+
 
       </section>
 
       <!--Project Section -->
-      <h2>Projects //</h2>
+    <h2 id="proj">Projects //</h2>
+
+    <div class="projectquad">
+
       <section class="project1">
         <h2>Busy Bus</h2>
-        <p class="projectpara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. </p>
+        <p class="projectpara">So you two dig up, dig up dinosaurs? Life finds a way. My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little monster! </p>
 
       </section>
 
       <section class="project2">
         <h2>Olympus Cloud Service</h2>
-        <p class="projectpara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. </p>
+        <p class="projectpara"> Hey, you know how I'm, like, always trying to save the planet? Here's my chance. I gave it a cold? I gave it a virus. A computer virus. God creates dinosaurs. God destroys dinosaurs. </p>
 
       </section>
 
       <section class="project3">
         <h2>Adamant Barbell Club</h2>
-        <p class="projectpara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        <p class="projectpara"> God creates Man. Man destroys God. Man creates Dinosaurs. Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with your own clever thoughts and ideas.</p>
 
       </section>
 
       <section class="project4">
         <h2>Grocery Store App</h2>
-        <p class="projectpara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. </p>
+        <p class="projectpara"> God creates Man. Man destroys God. Man creates Dinosaurs. Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with your own clever thoughts and ideas. </p>
 
       </section>
-      <h2>Let's Talk! //</h2>
-      <!--Footer Section -->
-    <footer>
-      <ul>
-        <li>EMAIL</li>
-        <li><a href="mailto:ashippyflc@gmail.com">ashippyflc@gmail.com</a></li>
-      </ul>
-      <ul>
-        <li>PHONE</li>
-        <li><a href="phone link">Schedule phone call</a></li>
-      </ul>
-      <ul>
-        <li>SOCIAL</li>
-        <li><a href="linked in">LinkedIn</a></li>
-        <li><a href="dribble link">Dribble</a></li>
-        <li><a href="ig link">Instagram</a></li>
-      </ul>
 
-      <h3>Copyright 2020 Designed and Developed by Alexa Shippy</h3>
+    </div>
 
-      <a href="email">
-        <img src="images/at.png" alt="Social Icons">
-      </a>
-      <a href="linked in">
-        <img src="images/linked.png" alt="Social Icons">
-      </a>
-      <a href="phone schedule">
-        <img src="images/phone.png" alt="Social Icons">
-      </a>
-      
-    </footer>
+      <h2 id="talk">Let's Talk! //</h2>
 
     </main>
+
+      <!--Footer Section -->
+      <section class="ft-social">
+        <ul class="ft-social-list">
+
+          <li><a href="email">
+            <img src="images/at.png" alt="Social Icons">
+          </a></li>
+          <li><a href="linked in">
+            <img src="images/linked.png" alt="Social Icons">
+          </a></li>
+          <li><a href="phone schedule">
+            <img src="images/phone.png" alt="Social Icons">
+          </a></li>
+        </ul>
+      </section>
+      <footer>
+
+
+        <section class="ft-main">
+
+          <div class="ft-main-item">
+            <h2 class="ft-title">EMAIL</h2>
+             <ul class="email-list">
+              <li><a href="mailto:ashippyflc@gmail.com">ashippyflc@gmail.com</a></li>
+            </ul>
+          </div>
+
+          <div class="ft-main-item">
+            <h2 class="ft-title">PHONE</h2>
+             <ul class="phone-list">
+               <li><a href="phone link">Schedule phone call</a></li>
+             </ul>
+          </div>
+
+          <div class="ft-main-item">
+            <h2 class="ft-title">SOCIAL</h2>
+             <ul class="social-links">
+                <li><a href="linked in">LinkedIn</a></li>
+                <li><a href="dribble link">Dribble</a></li>
+                <li><a href="ig link">Instagram</a></li>
+              </ul>
+          </div>
+
+        </section>
+
+        <section class="ft-legal">
+          <ul class="ft-legal-list">
+            <li>&copy; Designed and Developed by Alexa Shippy.</li>
+          </ul>
+        </section>
+      </footer>
+
   </body>
 </html>
