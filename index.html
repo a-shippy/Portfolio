@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <title>Responsive Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
     <link href='css/reset.css' rel='stylesheet'/>
     <link href='css/styles.css' rel='stylesheet'/>
     <link rel="stylesheet" href="https://use.typekit.net/bpx1wig.css">
@@ -15,29 +15,33 @@
       <!--Nav bar -->
     <div class="topNav">
       <img src="images/logo.png" class="logo" alt="logo">
-      <nav class="nav-menu">
 
-          <a href="portcode/about.html" class="nav-link1">About</a>
-          <a href="portcode/resume.html" class="nav-link2">Resume</a>
-          <a href="portcode/contact.html" class="nav-link3">Contact</a>
+      <div id="navcontainer">
+        <ul id="navlist">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Resume</a></li>
+          <li class="end-list"><a href="#">Contact</a></li>
+        </ul>
+      </div>
 
-      </nav>
     </div>
+<!-- background images -->
+
+    <div style="background-image: url('images/herobarcode.png');" class="barcode">
+    </div>
+
 
   </header>
 
-    <section class="right-elements">
-      <img src="images/barcode.png" class="barcode" alt="Barcode">
-      <img src="images/homedate.png" class="date" alt="September 2019 to May 2020">
-    </section>
-
   <main class="container">
+
       <!--Hero Section -->
       <section class="hero">
         <h1>HE
           <br>LL
           <br>O </h1>
-          <span class="line-element"></span>
+
+        <img src="images/selfie.png" class="selfie-img" alt="selfie">
 
         <p id="blurb1">I’m Alexa but you can call me Lex. I am a designer currently in California but looking to move wherever the wind takes me! I have a frictionless approach to user experience.</p>
         <p id="blurb2">I compete in strength sports, I draw, tell stories through photography, and center myself by doing new, challenging things.</p>
