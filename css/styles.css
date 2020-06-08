@@ -11,7 +11,7 @@ h1 {
   font-size: 17.4em;
   font-family: vox, sans-serif;
   line-height: 85%;
-  margin-top: 40px;
+  margin-top: .3em;
 }
 
 h2 {
@@ -27,26 +27,30 @@ h3 {
 
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 .logo {
 
   height: auto;
-  width: 51px;
+  width: 5.1em;
 }
 
 
 .topNav {
   display: flex;
-  height: 35px;
+  height: 3.5em;
   justify-content: space-between;
-  margin: 30px 85px;
+  margin: 3em 8.5em;
   width: auto;
 }
 
 
-
 #navcontainer
 {
-margin: 10px 0 0 30px;
+margin: 1em 0 0 3em;
 padding: 0;
 
 }
@@ -104,8 +108,9 @@ background: #FF008E;
 
 .hero {
   display: flex;
-  margin-left: 220px;
-  margin-top: 70px;
+  flex-wrap: wrap;
+  margin-left: 22em;
+  margin-top: 7em;
 }
 
 
@@ -120,25 +125,25 @@ background: #FF008E;
 .barcode {
   position: fixed;
   left: 0;
-  height: 560px;
-  margin-top: 125px;
-  width: 120px;
+  height: 56em;
+  margin-top: 12.5em;
+  width: 12em;
   background-repeat: no-repeat;
 }
 
 .date {
   display: inline-block;
   float: right;
-  margin-right: 10px;
-  width: 20px;
-  height: 140px;
+  margin-right: 1em;
+  width: 2em;
+  height: 14em;
 }
 
 .green-arrow {
-  height: 120px;
-  margin-left: 115px;
-  margin-top: 485px;
-  width: 120px;
+  height: 12em;
+  margin-left: 11.5em;
+  margin-top: 48.5em;
+  width: 12em;
 
 }
 
@@ -161,18 +166,17 @@ background: #FF008E;
   padding-top: 356px;
   padding-left: 65px;
   width: 200px;
-
 }
 
 
 
 .selfie-img {
-  height: 295px;
-  margin-left: 50px;
-  margin-right: 80px;
-  margin-top: 190px;
+  height: 29.5em;
+  margin-left: 5em;
+  margin-right: 8em;
+  margin-top: 19em;
 
-  width: 295px;
+  width: 29.5em;
 
 }
 
@@ -182,12 +186,11 @@ background: #FF008E;
   min-height: 100vh;
 }
 
+
 .container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  flex: 1;
-  width: 89.5%;
+
 
 }
 
@@ -197,7 +200,7 @@ background: #FF008E;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 85px;
+  margin-top: 8.5em;
 }
 
 #proj {
@@ -212,42 +215,42 @@ background: #FF008E;
 
 .project1 {
   border: 3px black solid;
-  width: 608px;
-  height: 700px;
+  width: 60.8em;
+  height: 70em;
   line-height: 150%;
-  margin: 35px;
-  padding-left: 60px;
-  padding-top: 60px;
+  margin: 3.5em;
+  padding-left: 6em;
+  padding-top: 6em;
   background-color: #29E267;
 }
 .project2 {
   border: 3px black solid;
-  width: 608px;
-  height: 700px;
+  width: 60.8em;
+  height: 70em;
   line-height: 150%;
-  margin: 35px;
-  padding-left: 60px;
-  padding-top: 60px;
+  margin: 3.5em;
+  padding-left: 6em;
+  padding-top: 6em;
   background-color: #FF008E;
 }
 .project3 {
   border: 3px black solid;
-  width: 608px;
-  height: 700px;
+  width: 60.8em;
+  height: 70em;
   line-height: 150%;
-  margin: 35px;
-  padding-left: 60px;
-  padding-top: 60px;
+  margin: 3.5em;
+  padding-left: 6em;
+  padding-top: 6em;
   background-color: #FBFF2F
 }
 .project4 {
   border: 3px black solid;
-  width: 608px;
-  height: 700px;
+  width: 60.8em;
+  height: 70em;
   line-height: 150%;
-  margin: 35px;
-  padding-left: 60px;
-  padding-top: 60px;
+  margin: 3.5em;
+  padding-left: 6em;
+  padding-top: 6em;
   background-color: #FF3317;
 }
 
@@ -269,6 +272,17 @@ background: #FF008E;
   margin: 0 auto;
   width: 88%;
 
+}
+
+.header {
+  background-image: url("images/olymockup.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 798px;
+  width: 790px;
 }
 
 .cs-head {
@@ -295,35 +309,25 @@ background: #FF008E;
 }
 
 .proto-img {
-  height: 290px;
-  width: 290px;
+  height: 29em;
+  width: 29em;
   margin-right: 260px;
 }
 
-.olymockup-img {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 798px;
-  width: 790px;
 
-}
 
 .greenarrow-img {
-  height: 105px;
-  width: 105px;
+  height: 10.5em;
+  width: 10.5em;
   align-self: flex-end;
   margin-left: 180px;
 
 }
 
 .pinkarrow-img {
-  height: 19px;
+  height: 1.9em;
   margin-left: 5px;
-  width: 19px;
+  width: 1.9pem;
 }
 
 .sec-header {
@@ -331,7 +335,7 @@ background: #FF008E;
   align-items: flex-end;
   justify-content: flex-end;
   margin-right: 385px;
-  width: 515px;
+  width: 51.5em;
 }
 
 #casepara {
@@ -367,14 +371,14 @@ background: #FF008E;
   display: flex;
   margin-top: 115px;
   margin-bottom: 115px;
-  height: 600px;
+  height: 60em;
 }
 
 .problem {
   height: auto;
   margin-right: 345px;
   margin-left: 104px;
-  width: 515px;
+  width: 51.5em;
 }
 
 
@@ -388,7 +392,7 @@ background: #FF008E;
 .olymockup2-img {
   align-self: center;
   height: 382px;
-  width: 515px;
+  width: 51.5em;
 }
 
 .survey {
@@ -397,15 +401,15 @@ background: #FF008E;
   height: auto;
   margin: 0 auto;
   margin-top: 165px;
-  width: 555px;
+  width: 55.5em;
 
 }
 
 .charts-img {
-  height: 480px;
+  height: 48em;
   margin: 0 auto;
   margin-top: 190px;
-  width: 1223px;
+  width: 122.3em;
 }
 
 .analysis {
@@ -414,14 +418,14 @@ background: #FF008E;
   height: auto;
   margin: 0 auto;
   margin-top: 250px;
-  width: 555px;
+  width: 55.5em;
 }
 
 .competitive-img {
-  height: 215px;
+  height: 21.5em;
   margin: 0 auto;
   margin-top: 180px;
-  width: 806px;
+  width: 80.6em;
 }
 
 .personas {
@@ -430,14 +434,14 @@ background: #FF008E;
   height: auto;
   margin: 0 auto;
   margin-top: 250px;
-  width: 555px;
+  width: 55.5em;
 }
 
 .persona-box {
   background-color: #E9E6E6;
   height: 1100px;
   margin: 0 auto;
-  margin-top: 180px;
+  margin-top: 140px;
   padding: 42px 0;
   width: auto;
 }
@@ -446,8 +450,8 @@ background: #FF008E;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 1014px;
-  width: 1245px;
+  height: 101.4em;
+  width: 124.5em;
 }
 
 .user-flows {
@@ -456,14 +460,14 @@ background: #FF008E;
   height: auto;
   margin: 0 auto;
   margin-top: 250px;
-  width: 555px;
+  width: 55.5em;
 }
 
 .userflow-img {
-  height: 585px;
+  height: 58.5em;
   margin: 0 auto;
   margin-top: 180px;
-  width:505px;
+  width:50.5em;
 }
 
 .wireframes {
@@ -472,7 +476,7 @@ background: #FF008E;
   height: auto;
   margin: 0 auto;
   margin-top: 250px;
-  width: 555px;
+  width: 55.5em;
 }
 
 .wire-imgs {
@@ -482,23 +486,23 @@ background: #FF008E;
   justify-content: space-between;
 }
 .wire1-img {
-  height: 505px;
-  width: 308px;
+  height: 50.5em;
+  width: 30.8em;
 }
 
 .wire2-img {
-  height: 505px;
-  width: 300px;
+  height: 50.5em;
+  width: 30em;
 }
 
 .wire3-img {
-  height: 211px;
-  width: 298px;
+  height: 21.1em;
+  width: 29.8em;
 }
 
 .wire4-img {
-  height: 505px;
-  width: 294px;
+  height: 50.5em;
+  width: 29.4em;
 }
 
 .brand-whole {
@@ -506,7 +510,7 @@ background: #FF008E;
   flex-direction: column;
   align-content: center;
   background-color: #FFD9EE;
-  height: 1060px;
+  height: 106em;
   margin: 0 auto;
   margin-top: 130px;
   width: auto;
@@ -517,8 +521,8 @@ background: #FF008E;
   flex-wrap: wrap;
   height: auto;
   margin: 0 auto;
-  margin-top: 100px;
-  width: 555px;
+  margin-top: 115px;
+  width: 55.5em;
 }
 
 .brand-box {
@@ -527,10 +531,10 @@ background: #FF008E;
 }
 .branding-img {
   display: block;
-  height: 675px;
+  height: 67.5em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 180px;
+  margin-top: -270px;
 
 }
 
@@ -539,14 +543,14 @@ background: #FF008E;
   flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 350px;
-  width: 555px;
+  width: 55.5em;
 }
 
 .style-img {
-  height: 618px;
+  height: 61.8em;
   margin: 0 auto;
   margin-top: 180px;
-  width: 1248px;
+  width: 124.8em;
 
 }
 
@@ -555,8 +559,8 @@ background: #FF008E;
   flex-wrap: wrap;
   height: auto;
   margin: 0 auto;
-  margin-top: 200px;
-  width: 555px;
+  margin-top: 150px;
+  width: 55.5em;
 }
 
 .hf-imgs {
@@ -713,4 +717,340 @@ ul.ft-social-list {
   font-size: 1.4em;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+
+/* mobile home */
+@media screen and (max-width: 414px){
+
+.barcode {
+  display: none;
+}
+
+.selfie-img {
+  display: none;
+}
+
+h1 {
+  font-size: 11em;
+  line-height: 85%;
+  margin-top: auto;
+}
+
+h2 {
+  font-size: 3.0em;
+  line-height: 100%;
+  padding-right: 1em;
+}
+
+.logo {
+  height: 2.4em;
+  width: 3.5em;
+}
+
+.topNav {
+  margin: 3em 2em;
+}
+
+#navcontainer {
+  display: none;
+}
+
+.hero {
+  margin-left: 3em;
+  margin-top: 2em;
+}
+
+#blurb1 {
+  font-size: 1.3em;
+  height: 19em;
+  font-weight: 300;
+  line-height: 125%;
+  padding-top: 7.9em;
+  margin-left: 2.8em;
+  width:10em;
+}
+
+#blurb2 {
+  display: none;
+}
+
+.green-arrow {
+  display: none;
+}
+
+#proj {
+  font-size: 2em;
+  margin-left: 28px;
+  margin-top: 8em;
+}
+
+#talk {
+  font-size: 2em;
+  margin-left: 28px;
+  padding-top: 8em;
+}
+
+.projectquad {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8.5em;
+}
+
+.project1 {
+  border: 2px black solid;
+  width: 30.8em;
+  height: 30.8em;
+  line-height: 150%;
+  padding-left: 3em;
+  padding-top: 3em;
+  background-color: #29E267;
+}
+.project2 {
+  border: 3px black solid;
+  width: 30.8em;
+  height: 30.8em;
+  line-height: 150%;
+  padding-left: 3em;
+  padding-top: 3em;
+  background-color: #FF008E;
+}
+.project3 {
+  border: 3px black solid;
+  width: 30.8em;
+  height: 30.8em;
+  line-height: 150%;
+  padding-left: 3em;
+  padding-top: 3em;
+  background-color: #FBFF2F
+}
+.project4 {
+  border: 3px black solid;
+  width: 30.8em;
+  height: 30.8em;
+  line-height: 150%;
+  padding-left: 3em;
+  padding-top: 3em;
+  background-color: #FF3317;
+}
+
+.projectpara {
+  height: auto;
+  font-size: 1.2em;
+  font-family: montserrat, sans-serif;
+  font-weight: 200;
+  width: 162px;
+  margin-top: 38px;
+}
+
+.footer {
+  display: flex;
+
+}
+
+.ft-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 65px;
+}
+
+.ft-main-item {
+  margin-left: 3.6em;
+  width: 180px;
+}
+
+.social-links {
+    flex-direction: column;
+    font-size: 1.4em;
+    padding-top: 1em;
+    margin-bottom: 7em;
+
+  }
+
+.phone-list {
+    font-size: 1.4em;
+    padding-top: 1em;
+    margin-bottom: 7em;
+    width: 200px;
+  }
+
+.email-list {
+    font-size: 1.4em;
+    padding-top: 1em;
+    margin-bottom: 7em;
+  }
+
+.ft-legal {
+    font-size: 1.2em;
+
+  }
+
+  ul.ft-social-list {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    margin-left:
+
+  }
+}
+
+/* case study */
+
+@media screen and (max-width: 414px){
+
+.cs-head {
+  font-size: .9em;
+  margin-left: -4em;
+}
+
+.greenarrow-img {
+  display: none;
+}
+
+.role-head {
+  margin-left: 2.8em;
+}
+#role {
+  font-size: 1.5em;
+}
+
+#role-detail {
+  font-size: 1.1em;
+  margin-top: 1.2em;
+}
+
+.project-exp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: -.4em;
+  margin-top: 30em;
+  height: 45em;
+  width: auto;
+}
+
+#casepara {
+  font-size: 1.2em;
+  font-weight: lighter;
+  line-height: 140%;
+  margin-top: 2em;
+  margin-left: 7em;
+}
+
+.proj-word {
+  width: 31em;
+}
+
+.proto-img {
+  height: 14.5em;
+  width: 14.5em;
+  margin: auto 13em;
+}
+
+.intro {
+  background-color: #FFD9EE;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8em;
+  margin-bottom: 8em;
+  height: 87em;
+  width: auto;
+}
+
+.problem {
+  height: auto;
+  margin-left: 1.8em;
+  width: 30.5em;
+}
+
+#prob-head {
+  text-align: left;
+  margin-top: 80px;
+  margin-right: 300px;
+}
+
+.chartpic {
+  width: 24em;
+
+
+}
+
+.olymockup2-img {
+  align-self: center;
+  height: auto;
+  margin-top: 4em;
+  margin-right: 3.4em;
+  width: 32.5em;
+}
+
+.survey {
+  margin-left: 1.2em;
+  width: 305px;
+}
+
+.analysis {
+  margin-left: 1.2em;
+  width: 305px;
+}
+
+.personas {
+  margin-left: 1.2em;
+  width: 305px;
+}
+
+.user-flows {
+  margin-left: 1.2em;
+  width: 305px;
+}
+
+.wireframes {
+  margin-left: 1.2em;
+  width: 305px;
+}
+
+.wire-imgs {
+  display: none;
+}
+
+.brand-whole {
+  height: 102em;
+  margin-top: 80px;
+
+}
+
+.branding-img {
+  margin-right: auto;
+  margin-top: -30em;
+
+}
+
+.brand-box {
+  height: 73em;
+
+}
+
+.branding {
+  margin-left: 3.5em;
+  width: 305px;
+}
+
+.design-system {
+  margin-left: 1.2em;
+  margin-top: 20em;
+  width: 305px;
+}
+
+.high-fidelity {
+  margin-left: 1.2em;
+  width: 305px;
+}
+
+.hf-imgs {
+  display: none;
+}
+
+
 }
