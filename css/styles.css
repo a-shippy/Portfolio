@@ -270,6 +270,11 @@ background: #FF008E;
   margin-top: 75px;
 }
 
+.cs-arrow {
+  margin-top: 5em;
+  width: 22em;
+}
+
 
 /* case study page 1 */
 
@@ -452,14 +457,14 @@ background: #FF008E;
   margin: 0 auto;
   margin-top: 140px;
   padding: 42px 0;
-  width: auto;
+  width: 100%;
 }
 
 .personas-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
+  margin-top: 180px;
   width: 124.5em;
 }
 
@@ -604,6 +609,10 @@ background: #FF008E;
 
 .cs-h3 {
   text-align: left;
+  margin-top: 100px;
+}
+
+.it-img {
   margin-top: 100px;
 }
 
@@ -783,7 +792,7 @@ ul.ft-social-list {
   margin: 0 auto;
   margin-top: 12em;
   margin-bottom: 3em;
-  width: 76em;
+  width: 68em;
 }
 
 .green-arrow-about {
@@ -798,6 +807,320 @@ ul.ft-social-list {
   margin-top: 11em;
   width: 25.2em;
 }
+
+
+/* Landscape phone to portrait tablet INDEX*/
+
+@media (max-width: 768px) {
+
+.barcode {
+  display: none;
+}
+
+.selfie-img {
+  display: none;
+}
+
+h1 {
+  font-size: 13em;
+  line-height: 85%;
+  margin-top: auto;
+}
+
+h2 {
+  font-size: 3.4em;
+  line-height: 100%;
+  padding-right: 1em;
+}
+
+.logo {
+  height: 2.8em;
+  width: 3.9em;
+}
+
+.topNav {
+  margin: 3.4em 2.4em;
+
+}
+
+#navcontainer {
+  display: none;
+}
+
+.hero {
+  margin-left: 4em;
+  margin-top: 3em;
+}
+
+#blurb1 {
+  font-size: 1.8em;
+  height: auto;
+  font-weight: 300;
+  line-height: 125%;
+  padding-top: 8.8em;
+  margin-left: 2.4em;
+  width: 12em;
+}
+
+#blurb2 {
+  font-family: montserrat, sans-serif;
+  font-size: 1.3em;
+  font-weight: 300;
+  line-height: 120%;
+  height: 120px;
+  padding-top: 195px;
+  padding-left: 65px;
+  width: 14em;
+}
+
+.green-arrow {
+  display: none;
+}
+
+#proj {
+  font-size: 2.4em;
+  margin-left: 32px;
+  margin-top: 8em;
+}
+
+#talk {
+  font-size: 2.4em;
+  margin-left: 32px;
+  padding-top: 8em;
+}
+
+.projectquad {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4em;
+}
+
+.project1 {
+  border: 2px black solid;
+  width: 62.5em;
+  height: 25em;
+  line-height: 150%;
+  padding-left: 3em;
+  padding-top: 3em;
+  background-color: #29E267;
+}
+.project2 {
+  border: 2px black solid;
+  width: 62.5em;
+  height: 25em;
+  line-height: 150%;
+  padding-left: 3em;
+  padding-top: 3em;
+  background-color: #FF008E;
+}
+.project3 {
+  border: 2px black solid;
+  width: 62.5em;
+  height: 25em;
+  line-height: 150%;
+  padding-left: 3em;
+  padding-top: 3em;
+  background-color: #FBFF2F
+}
+.project4 {
+  border: 2px black solid;
+  width: 62.5em;
+  height: 25em;
+  line-height: 150%;
+  padding-left: 3em;
+  padding-top: 3em;
+  background-color: #FF3317;
+}
+
+.projectpara {
+  height: auto;
+  font-size: 1.6em;
+  font-family: montserrat, sans-serif;
+  font-weight: 300;
+  line-height: 115%;
+  width: 34em;
+  margin-top: 25px;
+}
+
+.cs-arrow {
+  display: none;
+}
+
+.footer {
+  display: flex;
+
+}
+
+.ft-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 65px;
+}
+
+.ft-main-item {
+  margin-left: 3.6em;
+  width: 180px;
+}
+
+.social-links {
+    flex-direction: column;
+    font-size: 1.4em;
+    padding-top: 1em;
+    margin-bottom: 7em;
+
+  }
+
+.phone-list {
+    font-size: 1.4em;
+    padding-top: 1em;
+    margin-bottom: 7em;
+    width: 200px;
+  }
+
+.email-list {
+    font-size: 1.4em;
+    padding-top: 1em;
+    margin-bottom: 7em;
+  }
+
+.ft-legal {
+    font-size: 1.2em;
+
+  }
+
+  ul.ft-social-list {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 45px;
+    margin-bottom: -3.5em;
+
+  }
+
+.s-button {
+  margin-right: 1em;
+}
+
+
+ }
+
+
+
+ /* Landscape phone to portrait tablet ABOUT*/
+
+ @media (max-width: 768px) {
+
+   #navcontainer {
+     display: inline;
+   }
+
+   .about-hero {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items:flex-start;
+     flex-wrap: wrap;
+     margin-left: 4em;
+     margin-right: 8em;
+     margin-top: 4em;
+     padding: 0;
+     width: auto;
+   }
+
+   #about-desc {
+     font-family: vox;
+     font-size: 2.8em;
+     padding-top: 3em;
+     margin-left: 5em;
+     margin-right: 0;
+     text-decoration: underline;
+
+   }
+
+   .aboutpara {
+     font-size: 2em;
+     font-weight: 200;
+     line-height: 140%;
+     margin-top: 2em;
+     padding: 0 3em;
+     width: auto;
+   }
+
+   .about-selfie {
+     margin-top: 10em;
+     width: 24em;
+
+   }
+
+   .container-about {
+     display: flex;
+     flex-direction: column;
+
+   }
+
+   .context {
+     height: auto;
+     margin: 0 auto;
+     margin-top: 12em;
+     margin-bottom: 3em;
+     width: 68em;
+   }
+
+   .green-arrow-about {
+     height: auto;
+     width: 10.4em;
+     display: block;
+     margin: 0 auto;
+     padding-top: 5em;
+
+
+   }
+
+   .resume-button {
+     margin-left: 5.2em;
+     margin-top: 11em;
+     width: 25.2em;
+
+   }
+
+
+
+  }
+
+
+  /* Landscape phone to portrait tablet CS*/
+
+@media (max-width: 768px) {
+
+.container-oly {
+  display: flex;
+  width: auto;
+}
+
+.olymockup-img {
+  display: none;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.problem {
+  display: flex;
+  flex-direction: column;
+}
+
+.wire-imgs {
+  display: none;
+}
+
+}
+
 
 
 
@@ -923,9 +1246,14 @@ h2 {
   height: auto;
   font-size: 1.2em;
   font-family: montserrat, sans-serif;
-  font-weight: 200;
-  width: 162px;
+  font-weight: 300;
+  width: 20em;
   margin-top: 38px;
+}
+
+.cs-arrow {
+  margin-top: 5em;
+  width: 17em;
 }
 
 .footer {
@@ -953,6 +1281,10 @@ h2 {
 
   }
 
+.ft-social-list li {
+  width: 414px;
+}
+
 .phone-list {
     font-size: 1.4em;
     padding-top: 1em;
@@ -974,12 +1306,12 @@ h2 {
   ul.ft-social-list {
     display: block;
     text-align: right;
-    margin-right: -.5em;
+    margin-right: -.16em;
 
   }
 
 .s-button {
-  margin-right: 2.5em;
+  margin-right: 2.2em;
 }
 
 }
@@ -987,6 +1319,8 @@ h2 {
 /* case study */
 
 @media screen and (max-width: 414px){
+
+
 
 .cs-head {
   font-size: .9em;
@@ -999,11 +1333,10 @@ h2 {
   width: 3.7em;
 }
 
-
-
 .role-head {
   margin-left: 2.8em;
 }
+
 #role {
   font-size: 1.5em;
 }
@@ -1029,15 +1362,15 @@ h2 {
 }
 
 #casepara {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: lighter;
   line-height: 140%;
   margin-top: 2em;
-  margin-left: 7em;
+  margin-left: 5em;
 }
 
 .proj-word {
-  width: 31em;
+  width: 34em;
 }
 
 .proto-img {
@@ -1053,13 +1386,13 @@ h2 {
   margin-top: 8em;
   margin-bottom: 8em;
   height: 87em;
-  width: auto;
+  width: 414px;
 }
 
 .problem {
   height: auto;
   margin-left: 1.8em;
-  width: 30.5em;
+  width: 34em;
 }
 
 #prob-head {
@@ -1102,10 +1435,10 @@ h2 {
 }
 
 .personas {
-  margin-left: 1.2em;
+  margin-left: 3.6em;
   margin-top: 18em;
   margin-bottom: 10em;
-  width: 305px;
+  width: 34em;
 }
 
 .persona-box {
@@ -1125,6 +1458,7 @@ h2 {
 }
 
 .wireframes {
+  margin-bottom: 18em;
   margin-left: 1.2em;
   margin-top: 18em;
   width: 305px;
@@ -1173,16 +1507,19 @@ h2 {
   width: 305px;
 }
 
-.is-it-img {
+
+.it-mobile-img {
   width: 370px;
   margin-bottom: 10em;
+  margin-top:-3em;
+
 }
 
 .finalmockup-img {
   height: auto;
   margin-left: 0px;
   margin-right: 0px;
-  margin-top: 10px;
+  margin-top: 100px;
   margin-bottom: 10px;
   width: 375px;
 
@@ -1221,7 +1558,7 @@ h2 {
   font-family: vox;
   font-size: 2.4em;
   padding-top: 3.4em;
-  text-decoration: none;
+  text-decoration: underline;
   padding-right: 0;
   padding-left: 2.5em;
 }
@@ -1236,7 +1573,6 @@ h2 {
 
 .aboutpara {
   font-size: 1.4em;
-
   line-height: 130%;
   margin-top: 1em;
 
@@ -1254,21 +1590,5 @@ h2 {
 
 }
 
-/*
-
-
-
-
-.container-about {
-  display: flex;
-  flex-direction: column;
-
-}
-
-
-
-
-
-*/
 
 }
