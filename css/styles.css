@@ -41,7 +41,7 @@ img {
 .logo-oly {
 
   height: auto;
-  margin-left: -96.5em;
+  margin-left: -5px;
   width: 5.1em;
 }
 
@@ -288,7 +288,12 @@ background: #FF008E;
 }
 
 .cs-head {
-  margin-left: -100px;
+  margin-left: 22em;
+}
+
+.hero-cs {
+  display: flex;
+  width: 80em;
 }
 
 #cs-bottom {
@@ -334,14 +339,14 @@ background: #FF008E;
   width: 10.5em;
   align-self: flex-end;
   margin-left: 160px;
-  margin-bottom: 9.5em;
+
 
 }
 
 .pinkarrow-img {
   height: 1.9em;
   margin-left: 5px;
-  width: 1.9pem;
+  width: 1.9em;
 }
 
 .sec-header {
@@ -563,7 +568,6 @@ background: #FF008E;
 }
 
 .pic-contain {
-  display: block;
   margin: 0 auto;
 }
 
@@ -849,9 +853,7 @@ h2 {
 
 }
 
-#navcontainer {
-  display: none;
-}
+
 
 .hero {
   margin-left: 4em;
@@ -948,10 +950,6 @@ h2 {
   line-height: 115%;
   width: 34em;
   margin-top: 25px;
-}
-
-.cs-arrow {
-  display: none;
 }
 
 .footer {
@@ -1103,6 +1101,11 @@ h2 {
 @media (max-width: 768px) {
 
 
+.hero-cs {
+  width: auto;
+  margin-top: 7em;
+  margin-left: 4em;
+}
 
 .container-oly {
   display: flex;
@@ -1129,6 +1132,7 @@ h2 {
 
 .cs-head {
   margin-left: 0;
+
 }
 
 .project-exp {
@@ -1193,6 +1197,9 @@ h2 {
   margin-bottom: 10em;
 }
 
+.pic-contain {
+  margin-left: 18em;
+}
 .wire-imgs {
   display: flex;
   flex-direction: column;
@@ -1251,9 +1258,7 @@ h2 {
   margin-bottom: 0;
 }
 
-.cs-bottom {
-  margin-top: -12em;
-}
+
 
 
 
@@ -1297,7 +1302,7 @@ h2 {
 }
 
 #navcontainer {
-  display: none;
+
 }
 
 .hero {
@@ -1468,17 +1473,24 @@ h2 {
 
 .cs-head {
   font-size: .9em;
-  margin-left: -4em;
+  margin-left: 3.5em;
+
+}
+
+.hero-cs {
+  width: 100px;
 }
 
 .greenarrow-img {
-  margin-top: 2em;
   height: auto;
-  width: 3.7em;
+  width: 8.5em;
+  margin: 0;
+  margin-left: 5em;
+
 }
 
 .role-head {
-  margin-left: 2.8em;
+  margin-left: 2em;
 }
 
 #role {
@@ -1499,7 +1511,6 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: -.4em;
   margin-top: 20em;
   height: 45em;
   width: auto;
@@ -1516,12 +1527,14 @@ h2 {
 
 .proj-word {
   width: 34em;
+  margin-bottom: 4em;
 }
 
 .proto-img {
   height: 14.5em;
   width: 14.5em;
-  margin: auto 13em;
+  margin: 0 auto;
+
 }
 
 .intro {
@@ -1581,7 +1594,8 @@ h2 {
 }
 
 .personas {
-  margin: 0;
+
+  margin-left: 4.8em;
   width: 340px;
 }
 
@@ -1601,6 +1615,7 @@ h2 {
 }
 
 .userflow-img {
+  margin: 0;
   margin-top: 10em;
 }
 
@@ -1616,14 +1631,15 @@ h2 {
 }
 
 .brand-whole {
-  height: 102em;
+  height: 115em;
   margin-top: 80px;
+
 
 }
 
 .branding-img {
   margin-right: auto;
-  margin-top: -30em;
+
   width: 34em;
 
 }
@@ -1679,6 +1695,11 @@ h2 {
 
 .conclusion {
   width: 305px;
+  margin-bottom: 11em;
+}
+
+#cs-bottom {
+  padding: 0;
 }
 
 }
