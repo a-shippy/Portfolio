@@ -1111,8 +1111,9 @@ h2 {
   margin: 0 5em;
 }
 
+
 .olymockup-img {
-  display: none;
+  visibility: hidden;
 }
 
 .pic-contain {
@@ -1528,8 +1529,9 @@ font: normal 12px montserrat, sans-serif;
 }
 
 .olymockup-img {
+  visibility: visible;
   margin-top: -27em;
-  width: 25em;
+  width: 220px;
 }
 
 .project-exp {
@@ -1543,7 +1545,7 @@ font: normal 12px montserrat, sans-serif;
 
 #casepara {
   font-size: 1.4em;
-  font-weight: lighter;
+  font-weight: 300;
   line-height: 140%;
   margin-top: 2em;
   margin-left: 3em;
@@ -1768,6 +1770,7 @@ font: normal 12px montserrat, sans-serif;
 
 .aboutpara {
   font-size: 1.4em;
+  font-weight: 300;
   line-height: 130%;
   margin-top: 1em;
 
