@@ -50,8 +50,9 @@ img {
   display: flex;
   height: 3.5em;
   justify-content: space-between;
-  margin: 3em 8.5em;
-  ;
+  margin: 0 8.5em;
+  padding: 3em 0;
+
 }
 
 
@@ -287,6 +288,12 @@ background: #FF008E;
 
 }
 
+.header {
+  background: url(images/olymockup-img.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
 .cs-head {
   margin-left: 22em;
 }
@@ -322,17 +329,6 @@ background: #FF008E;
   margin-right: 260px;
 }
 
-.olymockup-img {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 798px;
-  width: 790px;
-
-}
 
 .greenarrow-img {
   height: 10.5em;
@@ -847,10 +843,10 @@ h2 {
 }
 
 .topNav {
-  margin: 3.4em 2.4em;
+  margin: 0 2.4em;
+  padding: 3.4em 0;
 
 }
-
 
 
 .hero {
@@ -1008,13 +1004,12 @@ h2 {
 }
 
 
- }
 
 
 
- /* Landscape phone to portrait tablet ABOUT*/
+ /* Landscape phone to portrait tablet ABOUT (max-width: 768px)------*/
 
- @media (max-width: 768px) {
+
 
    #navcontainer {
      display: inline;
@@ -1091,18 +1086,17 @@ h2 {
 
 
 
-  }
+
+  /* Landscape phone to portrait tablet CS 768px------------*/
 
 
-  /* Landscape phone to portrait tablet CS*/
-
-@media (max-width: 768px) {
 
 
 .hero-cs {
+  background-color: #ffffff;
   width: auto;
-  margin-top: 7em;
-  margin-left: 4em;
+  margin-top: 50em;
+
 }
 
 .container-oly {
@@ -1111,10 +1105,6 @@ h2 {
   margin: 0 5em;
 }
 
-
-.olymockup-img {
-  visibility: hidden;
-}
 
 .pic-contain {
   margin-right: 0;
@@ -1130,7 +1120,8 @@ h2 {
 }
 
 .cs-head {
-  margin-left: 0;
+
+  margin-left: 4em;
 
 }
 
@@ -1297,7 +1288,8 @@ h2 {
 }
 
 .topNav {
-  margin: 3em 2em;
+  margin: 0 2em;
+  padding: 3em 0;
 
 }
 
@@ -1482,11 +1474,11 @@ font: normal 12px montserrat, sans-serif;
   margin-right: 2.2em;
 }
 
-}
 
-/* case study */
 
-@media screen and (max-width: 414px){
+/* case study  (max-width: 414px)----------*/
+
+
 
 .container-oly {
   display: flex;
@@ -1502,9 +1494,10 @@ font: normal 12px montserrat, sans-serif;
 }
 
 .hero-cs {
+  background-color: 0;
   margin: 0;
-  margin-right: 5.5em;
-  width: 100px;
+  margin-top: 30em;
+
 }
 
 .greenarrow-img {
@@ -1512,6 +1505,7 @@ font: normal 12px montserrat, sans-serif;
   width: 8.5em;
   margin: 0;
   margin-left: 3em;
+  margin-left: 4em;
 
 }
 
@@ -1528,11 +1522,6 @@ font: normal 12px montserrat, sans-serif;
   margin-top: 1.2em;
 }
 
-.olymockup-img {
-  visibility: visible;
-  margin-top: -27em;
-  width: 220px;
-}
 
 .project-exp {
   display: flex;
@@ -1562,6 +1551,7 @@ font: normal 12px montserrat, sans-serif;
   width: 14.5em;
   margin: 0 auto;
 
+
 }
 
 .intro {
@@ -1590,7 +1580,7 @@ font: normal 12px montserrat, sans-serif;
 .charts-img {
   display: block;
   margin: 0 auto;
-  margin-top: 10em;
+  margin-top: 12em;
   width: 28.5em;
 
 
@@ -1616,6 +1606,10 @@ font: normal 12px montserrat, sans-serif;
   width: 305px;
 }
 
+.analysis {
+  margin-top: 12em;
+}
+
 .competitive-img {
   margin-top: 10em;
 }
@@ -1637,7 +1631,7 @@ font: normal 12px montserrat, sans-serif;
 
 .user-flows {
   margin-left: 1.2em;
-  margin-top: 18em;
+  margin-top: 12em;
   width: 305px;
 }
 
@@ -1666,7 +1660,6 @@ font: normal 12px montserrat, sans-serif;
 
 .branding-img {
   margin-right: auto;
-
   width: 34em;
 
 }
@@ -1683,7 +1676,7 @@ font: normal 12px montserrat, sans-serif;
 
 .design-system {
   margin-left: 1.2em;
-  margin-top: 20em;
+  margin-top: 30em;
   width: 305px;
 }
 
@@ -1694,7 +1687,7 @@ font: normal 12px montserrat, sans-serif;
 
 .high-fidelity {
   margin-left: 1.2em;
-  margin-top: 18em;
+  margin-top: 12em;
   width: 305px;
 }
 
@@ -1729,10 +1722,10 @@ font: normal 12px montserrat, sans-serif;
   padding: 0;
 }
 
-}
 
-/* mobile about */
-@media screen and (max-width: 414px){
+
+/* mobile about 414------------------ */
+
 
 .about-hero {
   flex-direction: column;
