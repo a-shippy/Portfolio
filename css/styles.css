@@ -33,16 +33,17 @@ img {
 }
 
 .logo {
-
   height: auto;
   width: 5.1em;
+  left: 8.5em;
+  position: fixed;
 }
 
 .logo-oly {
-
   height: auto;
-  margin-left: -5px;
+  left: 8.5em;
   width: 5.1em;
+  position: fixed;
 }
 
 
@@ -53,13 +54,18 @@ img {
   margin: 0 8.5em;
   padding: 3em 0;
 
+
 }
 
 
-#navcontainer
-{
-margin: 1em 0 0 3em;
-padding: 0;
+#navcontainer {
+  margin: 1em 0 0 3em;
+  padding: 0;
+  position: fixed;
+  z-index:1;
+  right: 8.5em;
+
+
 
 }
 
@@ -111,6 +117,15 @@ color: #fff;
 background: #FF008E;
 }
 
+#navcontainer ul li a:active
+{
+color: #fff;
+background: #C5448C;
+}
+
+#navcontainer .current {
+  font-weight: bolder;
+}
 
 
 .hero {
@@ -118,6 +133,10 @@ background: #FF008E;
   flex-wrap: wrap;
   margin-left: 22em;
   margin-top: 7em;
+}
+
+.home {
+  margin: 0;
 }
 
 
@@ -149,28 +168,29 @@ background: #FF008E;
 .green-arrow {
   height: 12em;
   margin-left: 11.5em;
-  margin-top: 48.5em;
+  margin-top: 48em;
   width: 12em;
 
 }
 
 #blurb1 {
-  font-size: 2.4em;
+  color: #434343;
+  font-size: 2.2em;
+  font-weight: 300;
   font-family: montserrat, sans-serif;
-  font-weight: 200;
   line-height: 115%;
   height: 290px;
   padding-top: 189px;
-  width: 230px;
+  width: 245px;
 }
 
 #blurb2 {
+  color: #434343;
   font-family: montserrat, sans-serif;
   font-size: 1.4em;
-  font-weight: 300;
-  line-height: 120%;
+  line-height: 130%;
   height: 120px;
-  padding-top: 356px;
+  padding-top: 343px;
   padding-left: 65px;
   width: 200px;
 }
@@ -211,18 +231,40 @@ background: #FF008E;
 }
 
 #proj {
+  font-size: 4.6em;
   margin-top: 205px;
-  margin-left: 95px;
+  margin-left: 5.3em;
 }
 
 #talk {
-  margin-left: 95px;
-  margin-bottom: 3em;
-  padding-top: 345px;
+  font-size: 4.6em;
+  margin-left: 208px;
+  padding-top: 245px;
+}
 
+.talkpara {
+  font-weight: bolder;
+  line-height: 135%;
+  font-size: 2.6em;
+  margin-top: 8.5em;
+  margin-left: 9.5em;
+  margin-bottom: 11.5em;
+
+  width: 60%;
+}
+
+.talkpara-cs {
+  font-weight: bolder;
+  line-height: 135%;
+  font-size: 2.6em;
+  margin-top: 2.5em;
+  margin-left: 9.5em;
+  margin-bottom: 11.5em;
+  width: 60%;
 }
 
 .project1 {
+  position: relative;
   border: 3px black solid;
   width: 60.8em;
   height: 70em;
@@ -232,7 +274,19 @@ background: #FF008E;
   padding-top: 6em;
   background-color: #29E267;
 }
+
+.OlyMock {
+  position: absolute;
+  bottom: 15px;
+  height: auto;
+  margin: 0;
+  right: 0;
+  width: 25em;
+
+}
+
 .project2 {
+  position: relative;
   border: 3px black solid;
   width: 60.8em;
   height: 70em;
@@ -242,7 +296,23 @@ background: #FF008E;
   padding-top: 6em;
   background-color: #FF008E;
 }
+
+.BBScreen1 {
+  position: absolute;
+  right: 7em;
+  bottom: 0;
+  width: 26em;
+}
+
+.BBScreen2 {
+  position: absolute;
+  right: 35px;
+  top: 0;
+  width: 20em;
+}
+
 .project3 {
+  position: relative;
   border: 3px black solid;
   width: 60.8em;
   height: 70em;
@@ -252,7 +322,16 @@ background: #FF008E;
   padding-top: 6em;
   background-color: #FBFF2F
 }
+
+.AdaScreen {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 15em;
+}
+
 .project4 {
+  position: relative;
   border: 3px black solid;
   width: 60.8em;
   height: 70em;
@@ -263,16 +342,33 @@ background: #FF008E;
   background-color: #FF3317;
 }
 
+.StockdMock1 {
+  position: absolute;
+  width: 10em;
+  right: 0;
+  bottom: 0;
+}
+
+.StockdMock2 {
+  position: absolute;
+  width: 17em;
+  right: 10em;
+  bottom: .5em;
+}
+
 .projectpara {
   height: auto;
   font-size: 1.6em;
   font-family: montserrat, sans-serif;
-  width: 155px;
+  line-height: 120%;
+  letter-spacing: .5px;
+  width: 190px;
   margin-top: 75px;
 }
 
 .cs-arrow {
   margin-top: 5em;
+  margin-bottom: 30em;
   width: 22em;
 }
 
@@ -284,7 +380,7 @@ background: #FF008E;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 88%;
+  width: 80%;
 
 }
 
@@ -301,6 +397,7 @@ background: #FF008E;
 .hero-cs {
   display: flex;
   width: 80em;
+  height: 88em;
 }
 
 #cs-bottom {
@@ -352,8 +449,8 @@ background: #FF008E;
 }
 
 #casepara {
-  font-size: 1.8em;
-  font-weight: lighter;
+  font-size: 2em;
+  font-weight: 300;
   line-height: 140%;
   margin-top: 20px;
   margin-left: 100px;
@@ -371,6 +468,7 @@ background: #FF008E;
   flex-direction: column;
   justify-content: flex-end;
   margin-left: 100px;
+  margin-bottom: 24.5em;
 
 }
 
@@ -382,15 +480,17 @@ background: #FF008E;
 .intro {
   background-color: #FFD9EE;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 115px;
   margin-bottom: 115px;
-  height: 60em;
+  height: 73em;
+
 }
 
 .problem {
   height: auto;
   margin-right: 345px;
-  margin-left: 104px;
+  margin-left: 18em;
   width: 51.5em;
 }
 
@@ -434,11 +534,33 @@ background: #FF008E;
   width: 55.5em;
 }
 
+.SWOT {
+  font-size: 1.5em;
+  line-height: 140%;
+  font-weight: 300;
+  margin-bottom: 8.5em;
+  width: 30em;
+
+}
+
+.comp-exp {
+
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 13em;
+}
+
+.comp-exp-para {
+  list-style-type: disc;
+  margin-left: 10em;
+  margin-top: 18em;
+}
+
 .competitive-img {
 
   margin: 0 auto;
-  margin-top: 180px;
-  width: 80.6em;
+  width: 60em;
 }
 
 .personas {
@@ -481,7 +603,13 @@ background: #FF008E;
 
   margin: 0 auto;
   margin-top: 180px;
-  width:50.5em;
+  width:103.5em;
+}
+
+.user-stories {
+  margin: 0 auto;
+  margin-top: 5em;
+  width: 103.5em;
 }
 
 .wireframes {
@@ -493,31 +621,41 @@ background: #FF008E;
   width: 55.5em;
 }
 
-.wire-imgs {
+.wire-imgs1 {
   display: flex;
   margin-top: 180px;
+  margin-bottom: 85px;
+  justify-content: space-between;
+  width: 105em;
+}
+
+.wire-imgs2 {
+  display: flex;
+
   margin-bottom: 185px;
   justify-content: space-between;
-  width: 103.4em;
+  width: 105em;
 }
-.wire1-img {
 
-  width: 30.8em;
+.wire1-img {
+  margin-right: 4em;
+  width: 50.8em;
 }
 
 .wire2-img {
-
-  width: 30em;
+  height: auto;
+  width: 50.8em;
 }
 
 .wire3-img {
-
-  width: 29.8em;
+  height: auto;
+  margin-right: 4em;
+  width: 50.8em;
 }
 
 .wire4-img {
-
-  width: 29.4em;
+  height: auto;
+  width: 50.8em;
 }
 
 .brand-whole {
@@ -629,10 +767,38 @@ background: #FF008E;
   width: 1410px;
 }
 
+.progression {
+  margin: 0 auto;
+  margin-top: 10em;
+  width: 30%;
+}
+
+.test-exp-para {
+  list-style-type: disc;
+  margin-left: 10em;
+  margin-top: 14em;
+}
+
+.User {
+  font-size: 1.5em;
+  line-height: 140%;
+  font-weight: 300;
+  margin-bottom: 4.5em;
+  width: 30em;
+
+}
+
+.test-exp {
+  display: flex;
+  margin: 0 auto;
+  align-items: flex-start;
+  margin-top: 4em;
+}
+
 .conclusion {
   display: flex;
   flex-direction: column;
-  margin-top: 240px;
+  margin-top: 200px;
   margin-bottom: 240px;
   height: 287px;
   width: 514px;
@@ -771,9 +937,10 @@ ul.ft-social-list {
 }
 
 .aboutpara {
+  color: #434343;
   font-size: 2em;
-  font-weight: 200;
-  line-height: 150%;
+  font-weight: 300;
+  line-height: 135%;
   margin-top: 2em;
   width: auto;
 }
@@ -813,6 +980,119 @@ ul.ft-social-list {
   width: 25.2em;
 }
 
+/*contact page*/
+
+#blurb3 {
+  font-family: montserrat, sans-serif;
+  font-size: 2.4em;
+  font-weight: 300;
+  line-height: 120%;
+  height: 120px;
+  margin-left: 5.8em;
+  margin-bottom: 5.5em;
+  padding-top: 195px;
+  padding-left: 65px;
+  width:16em;
+}
+
+.green-arrow-contact {
+  height: 6.4em;
+  width: 6.4em;
+  display: block;
+  margin: 0 auto;
+  margin-top: 26.5em;
+  margin-left: 37em;
+}
+
+.context-contact {
+  height: auto;
+  margin: 0 auto;
+  margin-top: 12em;
+  margin-bottom: 3em;
+  width: 41em;
+}
+
+.chat-hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 7em;
+  margin-left: 15em;
+  margin-right: 15em;
+}
+
+.chat {
+  width: 22.5em;
+}
+
+
+
+#talk {
+  font-size: 2.4em;
+  margin-left: 32px;
+  padding-top: 8em;
+}
+
+.contact-button {
+  width: 40em;
+  margin-bottom: 18em;
+}
+
+.contact-button-social {
+  width: 40em;
+}
+
+@media (max-width: 1747px) {
+
+.about-selfie {
+    margin-top: 12em;
+  }
+#about-desc {
+  margin-left: -2em;
+
+
+}
+
+}
+
+@media (max-width: 1521px) {
+.green-arrow {
+  margin-top: 15em;
+}
+}
+
+@media (max-width: 1124px) {
+
+  .pic-contain {
+    width: 51em;
+  }
+
+  .wire-imgs1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50.8em;
+  }
+
+  .wire1-img {
+    margin: 0;
+  }
+
+  .wire2-img {
+    margin-top: 4em;
+  }
+
+  .wire3-img {
+    margin: 0;
+  }
+
+  .wire4-img {
+    margin-top: 4em;
+  }
+  .wire-imgs2 {
+    flex-direction: column;
+  }
+}
+
 
 /* Landscape phone to portrait tablet INDEX*/
 
@@ -825,11 +1105,14 @@ ul.ft-social-list {
 .selfie-img {
   display: none;
 }
-
+.box {
+  width: 6em;
+}
 h1 {
   font-size: 13em;
   line-height: 85%;
   margin-top: auto;
+  padding-bottom: 0;
 }
 
 h2 {
@@ -839,7 +1122,8 @@ h2 {
 }
 
 .logo {
-  height: 2.8em;
+  height: auto;
+  margin-left: -67px;
   width: 3.9em;
 }
 
@@ -892,6 +1176,20 @@ h2 {
   padding-top: 8em;
 }
 
+.talkpara {
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 8em;
+
+}
+
+.talkpara-cs {
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 8em;
+
+}
+
 .projectquad {
   display: flex;
   justify-content: center;
@@ -903,38 +1201,65 @@ h2 {
 .project1 {
   border: 2px black solid;
   width: 62.5em;
-  height: 25em;
+  height: 62.5em;
   line-height: 150%;
   padding-left: 3em;
   padding-top: 3em;
   background-color: #29E267;
 }
+
+.OlyMock {
+
+}
+
 .project2 {
   border: 2px black solid;
   width: 62.5em;
-  height: 25em;
+  height: 62.5em;
   line-height: 150%;
   padding-left: 3em;
   padding-top: 3em;
   background-color: #FF008E;
 }
+
+.BBScreen1 {
+
+}
+
+.BBScreen2 {
+
+}
+
 .project3 {
   border: 2px black solid;
   width: 62.5em;
-  height: 25em;
+  height: 62.5em;
   line-height: 150%;
   padding-left: 3em;
   padding-top: 3em;
   background-color: #FBFF2F
 }
+
+.AdaScreen {
+
+}
+
 .project4 {
   border: 2px black solid;
   width: 62.5em;
-  height: 25em;
+  height: 62.5em;
   line-height: 150%;
   padding-left: 3em;
   padding-top: 3em;
   background-color: #FF3317;
+}
+
+.StockdMock1 {
+
+}
+
+.StockdMock2 {
+
 }
 
 .projectpara {
@@ -943,7 +1268,7 @@ h2 {
   font-family: montserrat, sans-serif;
   font-weight: 300;
   line-height: 115%;
-  width: 34em;
+  width: 22em;
   margin-top: 25px;
 }
 
@@ -1041,7 +1366,7 @@ h2 {
 
    .aboutpara {
      font-size: 2em;
-     font-weight: 200;
+     font-weight: 300;
      line-height: 140%;
      margin-top: 2em;
      padding: 0 3em;
@@ -1091,12 +1416,18 @@ h2 {
   /* Landscape phone to portrait tablet CS 768px------------*/
 
 
-
+  .logo-oly {
+    height: auto;
+    left: 0;
+    margin: 2em;
+    width: 3.9em;
+    position:fixed;
+  }
 
 .hero-cs {
   background-color: #ffffff;
   width: auto;
-  margin-top: 50em;
+  margin-top: 70em;
 
 }
 
@@ -1119,6 +1450,9 @@ h2 {
   margin: 0 auto;
   margin-top: 8em;
 }
+.hero-cs {
+  height: 50em;
+}
 
 .cs-head {
 
@@ -1126,10 +1460,15 @@ h2 {
 
 }
 
+.role-head {
+  height: 43.75em;
+
+}
+
 .project-exp {
   display: flex;
   flex-direction: column;
-  margin-top: 20em;
+  margin-top: 14em;
   width: auto;
 }
 
@@ -1140,9 +1479,15 @@ h2 {
   margin-top: 45em;
 }
 
+.problem{
+  margin: 0 auto;
+}
+
 .olymockup2-img {
+
   margin-top: 8em;
   margin-bottom: 6em;
+
 }
 
 .survey {
@@ -1161,12 +1506,30 @@ h2 {
   margin-top: 8em;
 }
 
+.comp-exp {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 13em;
+}
+
+.SWOT {
+  margin-bottom: 3em;
+}
+
+.comp-exp-para {
+  list-style-type: disc;
+  margin: 0 auto;
+}
+
 .competitive-img {
-  margin-top: 12em;
+  margin: 0 auto;
+  margin-bottom: 4em;
+  width: 60em;
 }
 
 .personas {
-  margin-top: 10em;
+  margin-top: 0;
 }
 
 .personas-img {
@@ -1176,11 +1539,18 @@ h2 {
 }
 
 .user-flows {
+  margin: 0 auto;
   margin-top: 10em;
 }
 
 .userflow-img {
+  margin: 0 auto;
   margin-top: 12em;
+  width: 50em;
+}
+
+.user-stories {
+  width: 50em;
 }
 
 .wireframes{
@@ -1189,25 +1559,37 @@ h2 {
 }
 
 .pic-contain {
-  margin-left: 18em;
+  height: auto;
+  margin: 0 auto;
 }
-.wire-imgs {
+.wire-imgs1 {
   display: flex;
   flex-direction: column;
-  margin-top: 12em;
+  margin: 0 auto;
+  Width: 40em;
+}
+
+.wire-imgs2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   Width: 40em;
 }
 
 .wire1-img {
-  margin-bottom: 8em;
+  margin-bottom: 4em;
 }
 
 .wire2-img {
   margin-bottom: 8em;
 }
 
-.wire-img {
-  margin-bottom: 8em;
+.wire3-img {
+  margin-bottom: 4em;
+}
+
+.wire4-img {
+  margin-bottom: 15em;
 }
 
 .brand-whole {
@@ -1244,14 +1626,65 @@ h2 {
   margin-top: 8em;
 }
 
+.test-exp {
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 13em;
+
+}
+
+.test-exp-para {
+  list-style-type: disc;
+  margin: 0 auto;
+
+}
+
+.progression {
+
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 70%;
+}
+
 .conclusion {
   margin-top: 15em;
   margin-bottom: 0;
 }
 
 
+#cs-bottom {
+  font-size: 2.4em;
+  margin-left: 32px;
+  margin-top: 8em;
+}
 
+/* contact 768 */
 
+.chat-hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-left: 4em;
+  margin-top: 4em;
+}
+
+#blurb3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8em;
+  width: 22%;
+  margin-left: -10em;
+  margin-top: 4em;
+}
+
+.green-arrow-contact {
+  margin: 0;
+  margin-right: 10.5em;
+  margin-top: 15em;
+}
 
 }
 
@@ -1294,13 +1727,16 @@ h2 {
 
 }
 
+#navcontainer {
+  margin-right: -35px;
 
+}
 
 #navcontainer ul li a
 {
 
 width: 70px;
-height: 28px;
+height: 32px;
 border-top: 2px solid #000;
 border-left: 2px solid #000;
 border-bottom: 2px solid #000;
@@ -1310,15 +1746,13 @@ color: #000;
 text-decoration: none;
 display: block;
 text-align: center;
-font: normal 12px montserrat, sans-serif;
+font: normal 13px montserrat, sans-serif;
 }
 
 .end-list {
   border-right: 2px solid #000;
-  height: 28px;
+  height: 32px;
 }
-
-
 
 
 .hero {
@@ -1331,9 +1765,9 @@ font: normal 12px montserrat, sans-serif;
   height: 19em;
   font-weight: 300;
   line-height: 125%;
-  padding-top: 7.9em;
-  margin-left: 2.8em;
-  width:10em;
+  padding-top: 6.5em;
+  margin-left: 8em;
+  width:38%;
 }
 
 #blurb2 {
@@ -1354,7 +1788,10 @@ font: normal 12px montserrat, sans-serif;
   font-size: 2em;
   margin-left: 28px;
   padding-top: 8em;
+
 }
+
+
 
 .projectquad {
   display: flex;
@@ -1373,6 +1810,11 @@ font: normal 12px montserrat, sans-serif;
   padding-top: 3em;
   background-color: #29E267;
 }
+
+.OlyMock {
+  display: none;
+}
+
 .project2 {
   border: 3px black solid;
   width: 30.8em;
@@ -1382,6 +1824,15 @@ font: normal 12px montserrat, sans-serif;
   padding-top: 3em;
   background-color: #FF008E;
 }
+
+.BBScreen1 {
+  display: none;
+}
+
+.BBScreen2 {
+  display: none;
+}
+
 .project3 {
   border: 3px black solid;
   width: 30.8em;
@@ -1391,6 +1842,11 @@ font: normal 12px montserrat, sans-serif;
   padding-top: 3em;
   background-color: #FBFF2F
 }
+
+.AdaScreen {
+  display: none;
+}
+
 .project4 {
   border: 3px black solid;
   width: 30.8em;
@@ -1399,6 +1855,14 @@ font: normal 12px montserrat, sans-serif;
   padding-left: 3em;
   padding-top: 3em;
   background-color: #FF3317;
+}
+
+.StockdMock1 {
+  display: none;
+}
+
+.StockdMock2 {
+  display: none;
 }
 
 .projectpara {
@@ -1413,6 +1877,31 @@ font: normal 12px montserrat, sans-serif;
 .cs-arrow {
   margin-top: 5em;
   width: 17em;
+}
+
+.talkpara {
+  font-size: 1.8em;
+  margin: 0;
+  margin-bottom: 10em;
+  margin-top: 5em;
+  margin-left: 28px;
+  width: 80%
+
+}
+
+.talkpara-cs {
+  margin: 0;
+  font-size: 1.8em;
+  margin-left: -8px;
+  margin-bottom: 10em;
+  margin-top: 5em;
+  width: 80%;
+
+}
+
+#cs-bottom {
+  margin: 0;
+  margin-left: -8px;
 }
 
 .footer {
@@ -1467,19 +1956,27 @@ font: normal 12px montserrat, sans-serif;
   ul.ft-social-list {
     display: block;
     text-align: right;
-    margin-right: -.16em;
+    margin-right:
 
   }
 
 .s-button {
-  margin-right: 2.2em;
+  margin-right: 2em;
 }
 
 
 
 /* case study  (max-width: 414px)----------*/
+.logo-oly {
+  height: auto;
+  left: 10.5px;
+  width: 3.9em;
+  position:fixed;
+}
 
-
+.cs-body {
+  width: 414px;
+}
 
 .container-oly {
   display: flex;
@@ -1491,14 +1988,18 @@ font: normal 12px montserrat, sans-serif;
   font-size: .9em;
   margin: 0;
   margin-left: 2em;
+}
+
+.cs-h2 {
+  padding: 0;
+  width: 350px;
 
 }
 
 .hero-cs {
-  background-color: 0;
   margin: 0;
-  margin-top: 30em;
-
+  margin-top: 40em;
+  height: 40em;
 }
 
 .greenarrow-img {
@@ -1507,10 +2008,10 @@ font: normal 12px montserrat, sans-serif;
   margin: 0;
   margin-left: 3em;
   margin-left: 4em;
-
 }
 
 .role-head {
+  height: 33.25em;
   margin-left: 2em;
 }
 
@@ -1528,7 +2029,7 @@ font: normal 12px montserrat, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 20em;
+  margin-top: 8em;
   height: 45em;
   width: auto;
 }
@@ -1539,7 +2040,7 @@ font: normal 12px montserrat, sans-serif;
   line-height: 140%;
   margin-top: 2em;
   margin-left: 3em;
-  width: 235px;
+  width: 255px;
 }
 
 .proj-word {
@@ -1561,20 +2062,24 @@ font: normal 12px montserrat, sans-serif;
   flex-direction: column;
   margin-top: 8em;
   margin-bottom: 8em;
-  height: 87em;
-  width: 414px;
+  width: auto;
 }
 
 .problem {
   height: auto;
+  margin: 0;
   margin-left: 1.8em;
-  width: 34em;
+  width: 340px;
 }
 
 #prob-head {
   text-align: left;
   margin-top: 80px;
   margin-right: 300px;
+}
+
+.sec-header {
+  margin-top: 4em;
 }
 
 
@@ -1608,15 +2113,39 @@ font: normal 12px montserrat, sans-serif;
 }
 
 .analysis {
-  margin-top: 12em;
+  margin-top: 4em;
+  height: auto;
+}
+
+.comp-exp {
+  margin: 0;
+  width: 35em;
+}
+
+.comp-exp-para {
+  list-style-type: disc;
+  margin: 0;
+
+  margin-top: 5em;
+  width: 30em;
+}
+
+.SWOT {
+  font-size: 1.2em;
+  line-height: 140%;
+  margin: 0;
+  margin-bottom: 3em;
+  width: 285px;
 }
 
 .competitive-img {
+  margin: 0;
   margin-top: 10em;
+  width: 33em;
 }
 
 .personas {
-
+  margin: 0;
   margin-left: 4.8em;
   width: 340px;
 }
@@ -1631,30 +2160,77 @@ font: normal 12px montserrat, sans-serif;
 }
 
 .user-flows {
+  margin: 0;
   margin-left: 1.2em;
-  margin-top: 12em;
+  margin-top: 10em;
   width: 305px;
 }
 
 .userflow-img {
   margin: 0;
-  margin-top: 10em;
+  margin-top: 8em;
+}
+
+.user-stories {
+  margin: 0;
+  margin-top: 4em;
 }
 
 .wireframes {
-  margin-bottom: 18em;
+  margin: 0;
   margin-left: 1.2em;
-  margin-top: 18em;
+  margin-top: 12em;
   width: 305px;
 }
 
-.wire-imgs {
-  display: none;
+.pic-contain {
+  height: 2100px;
+  width: auto;
+  margin: 0;
+}
+
+.wire-imgs1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4em;
+  margin-top: 10em;
+  width: 34em;
+
+}
+
+.wire-imgs2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 18em;
+  width: 34em;
+}
+
+.wire1-img {
+  margin: 0;
+}
+
+.wire2-img {
+  margin: 0;
+  margin-top: 4em;
+}
+
+.wire3-img {
+  margin: 0;
+}
+
+.wire4-img {
+  margin-top: 4em;
+}
+.wire-imgs2 {
+  flex-direction: column;
 }
 
 .brand-whole {
   height: 115em;
   margin-top: 80px;
+  width: auto;
 
 
 }
@@ -1714,14 +2290,21 @@ font: normal 12px montserrat, sans-serif;
   display: none;
 }
 
-.conclusion {
-  width: 305px;
-  margin-bottom: 11em;
+.progression {
+  margin: 0 auto;
+  margin-top: 10em;
+  width: 85%;
 }
 
-#cs-bottom {
-  padding: 0;
+.conclusion {
+  width: 305px;
+  margin: 0;
+  margin-bottom: 11em;
+  margin-top: 8em;
 }
+
+
+
 
 
 
@@ -1782,5 +2365,68 @@ font: normal 12px montserrat, sans-serif;
 
 }
 
+/* Contact page */
+
+.chat-hero {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0;
+  margin-left: 3em;
+  margin-right: 0;
+  margin-top: 4em;
+  padding: 0;
+}
+
+
+#blurb3 {
+  font-family: montserrat, sans-serif;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 120%;
+  height: 120px;
+  margin:0;
+  padding:0;
+  width:13em;
+}
+
+.green-arrow-contact {
+  height: 4.4em;
+  width: 4.4em;
+  display: block;
+  margin: 0;
+
+
+}
+
+.context-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 8em;
+  width: 40em;
+}
+
+
+#talk {
+  font-size: 2.4em;
+  margin-left: 32px;
+  padding-top: 8em;
+}
+
+.contact-button {
+  margin: 0 auto;
+  height: auto;
+  width: 30em;
+  margin-bottom: 18em;
+}
+
+.contact-button-social {
+  margin: 0 auto;
+  height: auto;
+  width: 30em;
+}
 
 }
