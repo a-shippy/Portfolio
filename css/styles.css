@@ -7,6 +7,8 @@ html {
   font-family: montserrat, sans-serif;
 }
 
+img { max-width: 100%; height: auto; }
+
 h1 {
   font-size: 17.4em;
   font-family: vox, sans-serif;
@@ -23,13 +25,17 @@ h2 {
 h3 {
   font-family: vox, sans-sans-serif;
   font-size: 2.8em;
-  text-align: right;
+  text-align: left;
 
 }
 
 img {
   height: auto;
   max-width: 100%;
+}
+
+picture{
+margin-bottom: 10em;
 }
 
 .logo {
@@ -64,6 +70,7 @@ img {
   position: fixed;
   z-index:1;
   right: 8.5em;
+  overflow: visible;
 
 
 
@@ -103,6 +110,45 @@ text-decoration: none;
 display: block;
 text-align: center;
 font: normal 18px montserrat, sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  font-size: 1.6em;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #FBFF2F;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #fff;
 }
 
 .end-list {
@@ -384,11 +430,7 @@ background: #C5448C;
 
 }
 
-.header {
-  background: url(images/olymockup-img.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-}
+
 
 .cs-head {
   margin-left: 22em;
@@ -411,13 +453,14 @@ background: #C5448C;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 300px;
-  height: 287px;
+  height: auto;
   width: auto;
 }
 
 .proj-word {
-  width: 514px;
+  width: 600px;
 }
 
 .proto-img {
@@ -443,7 +486,6 @@ background: #C5448C;
 .sec-header {
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
   margin-right: 385px;
   width: 51.5em;
 }
@@ -452,8 +494,9 @@ background: #C5448C;
   font-size: 2em;
   font-weight: 300;
   line-height: 140%;
-  margin-top: 20px;
-  margin-left: 100px;
+  margin-top: 2em;
+  width: 600px;
+
 
 }
 
@@ -481,17 +524,19 @@ background: #C5448C;
   background-color: #FFD9EE;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 115px;
   margin-bottom: 115px;
-  height: 73em;
+  height: auto;
+  width: auto;
 
 }
 
 .problem {
   height: auto;
-  margin-right: 345px;
   margin-left: 18em;
-  width: 51.5em;
+  width: 60em;
+  margin-bottom: 12.5em;
 }
 
 
@@ -506,6 +551,7 @@ background: #C5448C;
   align-self: center;
   height: 382px;
   width: 51.5em;
+  margin-right: 25em;
 }
 
 .survey {
@@ -514,7 +560,7 @@ background: #C5448C;
   height: auto;
   margin: 0 auto;
   margin-top: 165px;
-  width: 55.5em;
+  width: 60em;
 
 }
 
@@ -531,7 +577,7 @@ background: #C5448C;
   height: auto;
   margin: 0 auto;
   margin-top: 250px;
-  width: 55.5em;
+  width: 60em;
 }
 
 .SWOT {
@@ -544,11 +590,12 @@ background: #C5448C;
 }
 
 .comp-exp {
-
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   align-items: center;
   margin-top: 13em;
+
 }
 
 .comp-exp-para {
@@ -569,7 +616,7 @@ background: #C5448C;
   height: auto;
   margin: 0 auto;
   margin-top: 250px;
-  width: 55.5em;
+  width: 60em;
 }
 
 .persona-box {
@@ -594,10 +641,11 @@ background: #C5448C;
   flex-wrap: wrap;
   height: auto;
   margin: 0 auto;
-  margin-top: 250px;
-  margin-left: 375px;
-  width: 55.5em;
+  margin-top: 165px;
+  width: 60em;
 }
+
+
 
 .userflow-img {
 
@@ -618,7 +666,7 @@ background: #C5448C;
   height: auto;
   margin: 0 auto;
   margin-top: 250px;
-  width: 55.5em;
+  width: 60em;
 }
 
 .wire-imgs1 {
@@ -675,7 +723,7 @@ background: #C5448C;
   height: auto;
   margin: 0 auto;
   margin-top: 115px;
-  width: 55.5em;
+  width: 60em;
 }
 
 .brand-box {
@@ -688,7 +736,7 @@ background: #C5448C;
   margin-left: auto;
   margin-right: auto;
   margin-top: 13em;
-  width: 103.8em;
+  width: 70%;
 
 }
 
@@ -697,7 +745,7 @@ background: #C5448C;
   flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 350px;
-  width: 55.5em;
+  width: 60em;
 }
 
 .pic-contain {
@@ -722,7 +770,7 @@ background: #C5448C;
   height: auto;
   margin: 0 auto;
   margin-top: 150px;
-  width: 55.5em;
+  width: 60em;
 }
 
 .hf-imgs {
@@ -770,7 +818,7 @@ background: #C5448C;
 .progression {
   margin: 0 auto;
   margin-top: 10em;
-  width: 30%;
+  width: 50em;
 }
 
 .test-exp-para {
@@ -790,6 +838,7 @@ background: #C5448C;
 
 .test-exp {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   align-items: flex-start;
   margin-top: 4em;
@@ -801,7 +850,7 @@ background: #C5448C;
   margin-top: 200px;
   margin-bottom: 240px;
   height: 287px;
-  width: 514px;
+  width: 600px;
 }
 
 footer {
@@ -914,6 +963,404 @@ ul.ft-social-list {
   font-size: 1.4em;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+
+/*Stock'd Case Study*/
+
+#SGA-h2 {
+  font-size: 4.2em;
+  margin-left: -.5em;
+}
+
+.container-SGA {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
+
+  }
+
+  .Header {
+    background: url(images/stock-hero.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .sec-header-SGA {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 385px;
+    width: 51.5em;
+  }
+
+
+.casepara-SGA {
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 140%;
+  margin-top: 2em;
+  width: 600px;
+  }
+
+.proj-word-SGA {
+  width: 600px;
+}
+
+.intro-SGA {
+  background-color: #FFD6D1;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 115px;
+  margin-bottom: 150px;
+  height: 105em;
+
+  }
+
+#SGA-prob {
+  padding: 0 15em;
+}
+
+.SGA-prob-img {
+  margin-left: 12em;
+  height: 105em;
+  width: auto;
+}
+
+
+
+.Survey-SGA {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 65.5em;
+    }
+
+#survey-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15em;
+}
+
+.survey1-SGA {
+  width: 30%;
+  margin-right: 10em;
+}
+
+.survey2-SGA {
+  width: 35%;
+  margin-left: 5em;
+}
+
+.SGA-personas {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 350px;
+  width: 65.5em;
+
+}
+
+.personas-stockd {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ST-persona {
+  width: 30%;
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-top: 10em;
+}
+
+
+.analysis-SGA {
+  margin-top: 15em;
+}
+
+.comp-header {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.CA-header {
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  margin-left: 284px;
+}
+
+.comp-exp-SGA{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 13em;
+  margin-bottom: 150px;
+  height: auto;
+  width: 100%;
+}
+
+.comp-img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75em;
+
+}
+
+.competitive1-img {
+  height: auto;
+  margin-right: 8em;
+  width:27em;
+}
+
+.competitive2-img {
+  height: auto;
+  width:27em;
+  margin-right: 8em;
+}
+
+.listonic1-img {
+  height: auto;
+  margin-right: 5em;
+  width: 27em;
+}
+
+.listonic2-img {
+  height: auto;
+  width: 35.5em;
+}
+
+
+.stories-SGA {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 65.5em;
+
+    }
+
+.story-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10em;
+  width: 20em;
+}
+
+.user-flows-SGA {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 350px;
+  margin-bottom: 10em;
+  width: 65.5em;
+
+  }
+
+.SGA-flow {
+  margin-top: 5em;
+  width: 100%;
+}
+
+.doodles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 350px;
+  width: 65.5em;
+
+}
+
+.doodle-img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10em;
+  margin-bottom: 150px;
+  width: 80%;
+}
+
+.design-system-SGA {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 15em;
+  width: 65.5em;
+  height: auto;
+
+  }
+
+.design-system-img {
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 3em;
+  height: 100em;
+
+}
+
+.DS-img {
+  width: 48%;
+  margin-bottom: 3em;
+}
+
+
+.wireframe-SGA {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 65.5em;
+}
+
+.hand-wire {
+  display: block;
+  margin: 0 auto;
+  margin-left: 13em;
+  margin-top: 5em;
+  width:70%;
+}
+
+.hand-wire1 {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5em;
+  width:70%;
+}
+
+.wire-mockups {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5em;
+  margin-bottom: 15em;
+}
+
+.wiremock-img {
+  width:23%;
+
+}
+
+.high-fi-SGA {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 65.5em;
+
+}
+
+.high-mocks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15em;
+  margin-bottom: 10em;
+}
+
+.user-test {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 250px;
+  width: 65.5em;
+
+}
+
+.Testing-SGA {
+  background-color: #FFD6D1;
+  display: flex;
+  justify-content: center;
+  margin-top: 115px;
+  margin-bottom: 115px;
+  height: auto;
+}
+
+.UT-img {
+  height: auto;
+  margin: 0 auto;
+  margin: 10em;
+  width: 45em;
+}
+
+#cs-bottom {
+  width: 600px;
+}
+
+.conclusion-SGA {
+  margin: 25EM 15em;
+}
+
+
+
+
+/* Busy Bus case study */
+
+#BB-h2 {
+  font-size: 5em;
+  margin-left: -.5em;
+  margin-top: 8em;
+}
+
+#quote-h2 {
+  font-size: 4em;
+  line-height: 130%;
+}
+
+.intro-bb {
+  background-color: #B7FFCF;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 115px;
+  margin-bottom: 150px;
+  height: 105em;
+
+  }
+
+
+  .BBscreen-img {
+    align-self: center;
+    height: auto;
+    width: 40%;
+    margin-left: 4%;
+    margin-top: 8em;
+
+  }
+
+  .comppara-BB {
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 140%;
+    margin-top: 2em;
+    width: 600px;
+  }
+
+  .BB-story {
+    margin-top: 5em;
+    margin-bottom: 10em;
+    width: 100%;
+  }
+
+
+.finalmock-img {
+  width:20%;
+
+}
+
+.finalmock1-img {
+  width:20%;
+  margin-left: 2.5em;
+
+}
+
+.BBFinal {
+  background-color: #B7FFCF;
+  display: flex;
+  justify-content: center;
+  margin-top: 115px;
+  margin-bottom: 115px;
+  height: auto;
 }
 
 /*about me*/
@@ -1054,11 +1501,60 @@ ul.ft-social-list {
 
 }
 
+
+@media (max-width: 1608px) {
+
+ .intro-bb {
+   flex-wrap: wrap-reverse;
+   height: auto;
+   justify-content: center;
+   padding-bottom: 8em;
+}
+
+.BBscreen-img {
+  margin-top: 8em;
+  width: 60%;
+}
+
+}
+
 @media (max-width: 1521px) {
 .green-arrow {
   margin-top: 15em;
 }
 }
+
+
+@media (max-width: 1475px) {
+
+ .intro-SGA {
+   flex-wrap: wrap-reverse;
+   height: auto;
+   justify-content: center;
+}
+
+.Testing-SGA {
+  justify-content: center;
+  width: 100%;
+}
+
+.BBFinal-SGA {
+  justify-content: center;
+  width: 100%;
+}
+
+.UT-img {
+  width: 40%;
+  margin: 0;
+  margin-right: 5em;
+}
+
+
+ }
+
+
+
+
 
 @media (max-width: 1124px) {
 
@@ -1091,6 +1587,8 @@ ul.ft-social-list {
   .wire-imgs2 {
     flex-direction: column;
   }
+
+
 }
 
 
@@ -1333,6 +1831,8 @@ h2 {
 
 
 
+
+
  /* Landscape phone to portrait tablet ABOUT (max-width: 768px)------*/
 
 
@@ -1514,7 +2014,7 @@ h2 {
 }
 
 .SWOT {
-  margin-bottom: 3em;
+
 }
 
 .comp-exp-para {
@@ -1604,7 +2104,7 @@ h2 {
 
 .branding-img {
   margin-top: 10em;
-  width: 70.4em;
+  width: 70%;
 }
 
 .brand-box {
@@ -1686,6 +2186,15 @@ h2 {
   margin-top: 15em;
 }
 
+/* BB screen 768 px */
+
+.BBscreen-img {
+
+  margin-top: 8em;
+  margin-bottom: 6em;
+
+}
+
 }
 
 
@@ -1752,6 +2261,23 @@ font: normal 13px montserrat, sans-serif;
 .end-list {
   border-right: 2px solid #000;
   height: 32px;
+}
+
+.dropdown-content a {
+  color: black;
+  font-size: 1.2em;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  background-color: #fff;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 
@@ -2013,10 +2539,12 @@ font: normal 13px montserrat, sans-serif;
 .role-head {
   height: 33.25em;
   margin-left: 2em;
+  width:auto;
 }
 
 #role {
   font-size: 1.5em;
+  width: 8em;
 }
 
 #role-detail {
@@ -2029,8 +2557,9 @@ font: normal 13px montserrat, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 8em;
-  height: 45em;
+  height: auto;
   width: auto;
 }
 
@@ -2039,8 +2568,8 @@ font: normal 13px montserrat, sans-serif;
   font-weight: 300;
   line-height: 140%;
   margin-top: 2em;
-  margin-left: 3em;
-  width: 255px;
+  margin-left: 1.5em;
+  width: 300px;
 }
 
 .proj-word {
@@ -2048,11 +2577,15 @@ font: normal 13px montserrat, sans-serif;
   margin-bottom: 4em;
 }
 
+.proto-btn {
+  margin-top: 8em;
+}
+
 .proto-img {
   height: 14.5em;
   width: 14.5em;
   margin: 0 auto;
-
+  margin-top: 20em;
 
 }
 
@@ -2237,7 +2770,7 @@ font: normal 13px montserrat, sans-serif;
 
 .branding-img {
   margin-right: auto;
-  width: 34em;
+  width: 70%;
 
 }
 
@@ -2276,6 +2809,11 @@ font: normal 13px montserrat, sans-serif;
 
 }
 
+.it-img {
+  margin-top: 100px;
+  width: 100%;
+}
+
 .finalmockup-img {
   height: auto;
   margin-left: 0px;
@@ -2290,10 +2828,22 @@ font: normal 13px montserrat, sans-serif;
   display: none;
 }
 
+.test-exp {
+  width: 35em;
+}
+
+.test-exp-para {
+  width: 35em;
+}
+
+.User {
+  width: 375px;
+}
+
 .progression {
   margin: 0 auto;
-  margin-top: 10em;
-  width: 85%;
+  margin-bottom: 5em;
+  width: 100%;
 }
 
 .conclusion {
@@ -2303,9 +2853,338 @@ font: normal 13px montserrat, sans-serif;
   margin-top: 8em;
 }
 
+/* Stock'd mobile Case Study ------*/
+
+h2 {
+  width: 300px;
+}
+
+.intro-SGA {
+  background-color: #FFD6D1;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 115px;
+  margin-bottom: 115px;
+  height: auto;
+
+  }
+
+.proj-word-SGA {
+    width: auto;
+}
+
+.SGA-prob-img {
+    margin-left: 0;
+    height: auto;
+    width: 100%;
+}
 
 
+.casepara-SGA {
+  font-size: 1.4em;
+  width: 300px;
+  margin: 21px;
+}
 
+.proto-img {
+  margin: 0;
+}
+
+#SGA-prob {
+  padding: 0;
+  padding-left: 18px;
+  width: auto;
+  width: 100%;
+}
+
+.Survey-SGA {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 36em;
+    }
+
+.survey1-SGA {
+  margin: 0;
+  margin-left: -4em;
+  width: 77%;
+}
+
+.survey2-SGA {
+  margin: 0;
+  margin-top: 10em;
+  width: 90%;
+}
+
+
+.SGA-personas {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 10em;
+  width: 34em;
+
+}
+
+.personas-stockd {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ST-persona {
+  width: 90%;
+
+  margin-top: 5em;
+}
+
+.CA-header {
+  margin: 0;
+}
+
+.comp-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+
+}
+
+.competitive1-img {
+  height: auto;
+  margin: 0;
+  margin-bottom: 3em;
+  width:100%;
+}
+
+.competitive2-img {
+  height: auto;
+  margin: 0;
+  width:100%;
+
+}
+
+.listonic1-img {
+  height: auto;
+  margin: 0;
+  margin-bottom: 3em;
+  width: 75%;
+}
+
+.listonic2-img {
+  height: auto;
+  width: 100%;
+}
+
+
+.stories-SGA {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 10em;
+  width: 34em;
+
+}
+
+.user-flows-SGA {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 10em;
+  width: 34em;
+}
+
+.doodles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 10em;
+  width: 34em;
+}
+
+.design-system-SGA {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 10em;
+  width: 34em;
+}
+
+.design-system-img {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0;
+  height: auto;
+  width: 100%;
+}
+
+.DS-img {
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.wireframe-SGA {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 10em;
+  width: 34em;
+}
+
+.hand-wire {
+  display: block;
+  margin: 0 auto;
+  width:100%;
+}
+
+.hand-wire1 {
+  display: block;
+  margin: 0 auto;
+  width:100%;
+}
+
+.wire-mockups {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10em;
+  margin-bottom: 5em;
+}
+
+.wiremock-img {
+  width:90%;
+  margin-bottom: 4em;
+
+}
+
+
+.high-fi-SGA {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 10em;
+  width: 34em;
+}
+
+.high-mocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10em;
+  margin-bottom: 5em;
+}
+
+.user-test {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 10em;
+  width: 34em;
+}
+
+.Testing-SGA {
+  background-color: #FFD6D1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 115px;
+  margin-bottom: 115px;
+  height: auto;
+  width: auto;
+}
+
+.UT-img {
+  height: auto;
+  margin: 0 auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  width: 85%;
+  height: auto;
+}
+
+#cs-bottom {
+  width: 250px;
+}
+
+.conclusion-SGA {
+  width: 305px;
+  margin: 0;
+  margin-bottom: 15em;
+
+}
+
+
+/* BB mobile */
+
+#BB-h2 {
+  font-size: 4.6em;
+  margin-left: -.5em;
+  margin-top: 2.5em;
+}
+
+#quote-h2 {
+  font-size: 2em;
+  line-height: 130%;
+}
+
+.BBscreen-img {
+  align-self: center;
+  height: auto;
+  margin-top: 4em;
+  margin-right: 3.4em;
+  width: 32.5em;
+}
+
+.intro-bb {
+  background-color: #B7FFCF;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 115px;
+  margin-bottom: 115px;
+  height: auto;
+
+  }
+
+.finalmock-img {
+  align-items: center;
+  width:90%;
+  margin: 0;
+
+}
+
+.finalmock1-img {
+  width:90%;
+  margin-left: 0;
+
+}
+
+.BBFinal {
+  background-color: #B7FFCF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 115px;
+  margin-bottom: 115px;
+  padding-left: 8em;
+  height: auto;
+  width: auto;
+}
+
+.comppara-BB {
+  font-size: 1.4em;
+  width: 300px;
+  margin: 21px;
+  margin-top: 5em;
+}
+
+.BBscreen-img {
+  align-self: center;
+  height: auto;
+  margin-top: 4em;
+  margin-right: 3.4em;
+  width: 32.5em;
+}
 
 
 /* mobile about 414------------------ */
@@ -2381,11 +3260,12 @@ font: normal 13px montserrat, sans-serif;
 
 #blurb3 {
   font-family: montserrat, sans-serif;
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: 300;
   line-height: 120%;
   height: 120px;
   margin:0;
+  margin-top: 3em;
   padding:0;
   width:13em;
 }
@@ -2420,7 +3300,7 @@ font: normal 13px montserrat, sans-serif;
   margin: 0 auto;
   height: auto;
   width: 30em;
-  margin-bottom: 18em;
+  margin-bottom: 14em;
 }
 
 .contact-button-social {
