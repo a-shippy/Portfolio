@@ -1067,6 +1067,12 @@ ul.ft-social-list {
 .personas-stockd {
   display: flex;
   flex-wrap: nowrap;
+
+}
+
+.persona-pic {
+  width: 100%;
+  height: auto;
 }
 
 .ST-persona {
@@ -1527,6 +1533,12 @@ ul.ft-social-list {
 
 }
 
+@media (max-width: 1565px) {
+  
+
+
+}
+
 @media (max-width: 1521px) {
 .green-arrow {
   margin-top: 15em;
@@ -1561,8 +1573,7 @@ ul.ft-social-list {
 .personas-stockd {
   display: flex;
   flex-direction: column;
-
-
+  align-items: center;
 }
 
 
